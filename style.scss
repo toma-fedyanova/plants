@@ -1,0 +1,20 @@
+@import "./abstract/mixin";
+@import "./abstract/constants";
+@import "./base/base";
+@import "./abstract/placefolder";
+@import "./base/button";
+@import "./base/arrow";
+
+//layouts
+@import "./layouts/layouts";
+@import "./layouts/columns";
+
+//components
+@import "./component/colored";
+@import "./component/head";
+@import "./component/welcome";
+@import "./component/about";
+@import "./component/service";
+@import "./component/footer";
+@import "./component/prices";
+@import "./component/contacts";
