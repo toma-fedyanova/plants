@@ -1,0 +1,84 @@
+.button {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  &__bordered {  //родитель
+    font-family: $font-inter;
+    @include font($weight: 400, $size: 16px, $height: 20px);
+    color: #000000;
+    text-transform: uppercase;
+    padding: 10px 26px;
+    border: 2px solid #E06733;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .4s;
+    @include media-mobile {
+      font-size: 10px;
+      padding: 6px 18px;
+    }
+      &:hover {
+        background: $color-border;
+        color: $color-light;
+      }
+  }
+}
+
+.button__colored {
+  border: 1px solid #E06733;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  font-family: $font-inika;
+  padding: 12px 40px;
+  color: $color-border;
+  cursor: pointer;
+  transition: all .4s;
+  @include media-mobile {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 8px 28px;
+  }
+}
+.accourdion {
+  background: #EDF2EC;
+  border-radius: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: $font-inter;
+  padding: 16px 24px 16px 40px;
+  border-color: #EDF2EC;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  border: none;
+    &:hover {
+      background-color: #D6E7D2;
+    }
+}
+.button__colored_contact {
+  background: $color-light;
+}
+.button__colored:hover {
+  background: $color-border;
+  color: $color-light;
+}
+
+.button__adress {
+  color: $color-heading;
+  @include font($weight:700, $size:10px, $height: 13px);
+  font-family: $font-inika;
+  border: 1px solid #E06733;
+  border-radius: 5px;
+  padding: 7px 49px;
+  @include media-mobile {
+    padding: 7px 38px;
+  }
+}

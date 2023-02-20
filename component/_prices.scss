@@ -1,0 +1,210 @@
+.prices {
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    @include media-mobile {
+      flex-direction: column;
+    }
+  }
+  h2 {
+    font-family: $font-inter;
+    @include font($weight: 700, $size: 40px, $height: 48px);
+    margin-bottom: 60px;
+    padding-top: 5px;
+    @include media-tablet {
+      font-size: 35px;
+      line-height: 42px;
+      margin-bottom: 55px;
+      padding-top: 13px;
+      padding-left: 15px;
+    }
+    @include media-mobile {
+      font-size: 25px;
+      line-height: 30px;
+      padding-top: 0;
+      text-align: center;
+      padding-left: 0;
+      margin-bottom: 37px;
+    }
+  }
+}
+.prises__accourdion {
+  @include media-tablet {
+    margin-bottom: 34px;
+    width: 50%;
+  }
+  @include media-mobile {
+    margin-bottom: 0;
+    width: 100%;
+  }
+}
+.prices_buttons {
+  width: 332px;
+  border: 1px solid #E3E1D5;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 34px 41px 12px 41px;
+  margin-bottom: 120px;
+  @include media-mobile {
+    margin-bottom: 25px;
+    width: 224px;
+    margin-left: 52px;
+    padding-top: 25px;
+  }
+}
+.prices__buttons_order {
+  @include media-mobile {
+    margin-bottom: -20px;
+  }
+}
+.prices__buttons_order > summary{
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  @include font($weight: 700, $size: 20px, $height: 20px);
+  font-family: $font-inter;
+  background: #EDF2EC;
+  border-radius:20px;
+  width: 250px;
+  height: 50px;
+  padding-left: 40px;
+  padding-top: 16px;
+  @include media-mobile {
+    width: 180px;
+    height: 49px;
+    font-size: 15px;
+    padding-left: 32px;
+  }
+  &:hover {
+    background-color:  #D6E7D2;
+    }
+  }
+.prices__buttons_order[open] > * {
+  background-color: #D6E7D2;
+  border-radius: 20px;
+}
+.prices__buttons_order[open]{
+  .ico:before {
+        transform: rotate(45deg);
+  }
+  .ico:after {
+    transform: rotate(135deg);
+}
+  .accourdion_text {
+    @include font($weight: 300, $size: 10px, $height: 10px);
+    color: #717171;
+    font-family: $font-inter;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 23px;
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: #AEA1A1;
+      height: 0.5px;
+      width: 164px;
+      @include media-mobile {
+        width: 95px;
+      }
+    }
+}
+  .text_dollar {
+    color: $color-dark;
+    padding-left: 40px;
+    font-family: $font-inter;
+    margin-top: 0;
+    margin-bottom: 0;
+    @include font($weight: 300, $size: 10px, $height: 10px);
+}
+  .dollar {
+    color: $color-border;
+    font-size: 15px;
+  }
+  .order {
+    width: 86px;
+    margin-left: 39px;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 20px;
+    padding: 0px 20px;
+    background-color: $color-light;
+    margin-top: 12px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    font-family: $font-inter;
+    &:hover {
+      background-color: #499A18;
+      transition: all 0.5s ease-out;
+      cursor: pointer;
+    }
+  }
+}
+.order_content{
+  display: flex;
+  flex-direction: column;
+  margin-top: -30px;
+}
+
+.prices__promo{
+  max-width: 460px;
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+  @include media-mobile {
+    max-width: 330px;
+    justify-content: center;
+  }
+    p {
+    text-align: right;
+    letter-spacing: 0.1px;
+    margin-bottom: -11px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    font-family: $font-inter;
+    @include media-tablet {
+      font-size: 25px;
+      line-height: 35px;
+      padding-top: 116px;
+      padding-bottom: 45px;
+    }
+    @include media-mobile {
+      padding-top: 0;
+      font-size: 20px;
+      text-align: center;
+      max-width: 230px;
+      padding-bottom: 15px;
+      margin-top: 5px;
+      margin-bottom: 0;
+    }
+  }
+}
+.prices__promo_button {
+  display: flex;
+  flex-direction: column;
+  button {
+    padding: 12px 30px;
+    margin-top: -50px;
+    margin-bottom: 35px;
+    @include media-tablet {
+      margin-top: -80px;
+    }
+    @include media-mobile {
+      margin-top: 5px;
+      padding: 7px 25px;
+      margin-bottom: 40px;
+    }
+  }
+  img {
+    @include media-mobile {
+      display: none;
+    }
+  }
+}
+

@@ -1,0 +1,85 @@
+.wrapper__welcome {
+  display: flex;
+  justify-content: space-between;
+  @include media-tablet{
+    flex-direction: row-reverse;
+  }
+  @include media-mobile {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.welcome__leafs {
+  width: 30%;
+  height: 407px;
+  margin-bottom: 150px;
+  padding-top: 79px;
+  @include media-tablet {
+    margin-bottom: 0;
+    padding-top: 45px;
+  }
+  @include media-mobile {
+    display: none;
+  }
+    img {
+      width: 448px;
+      @include media-tablet {
+        width: 140%;
+        display: block;
+        margin-left: -38%;
+      }
+   }
+}
+.welcome__promo {
+  margin-left: 25%;
+  padding-top: 30px;
+  @include media-tablet {
+    width: 341px;
+    margin-left: 0;
+  }
+  @include media-mobile {
+    max-width: 95%;
+  }
+}
+h1 {
+  width: 98%;
+  margin-top: 92px;
+  @include media-tablet {
+    margin-top: 24px;
+    width: 100%;
+  }
+  @include media-mobile {
+    margin-top: 28px;
+  }
+}
+.colored {
+  color: $color-brand;
+}
+.welcome__description {
+  font-family: $font-inter;
+  color: $color-text;
+  width: 98%;
+  @include font($size: 20px, $weight: 400, $height: 35px);
+  padding-top: 9px;
+  @include media-tablet {
+    font-size: 16px;
+    line-height: 25px;
+    width: 341px;
+    padding-top: 0;
+  }
+  @include media-mobile {
+    max-width: 99%;
+  }
+}
+.welcome__button {
+  padding-top: 25px;
+  margin-bottom: 70px;
+  @include media-tablet {
+    padding-top: 23px;
+  }
+  @include media-mobile {
+    padding-top: 13px;
+    margin-bottom: 23px;
+  }
+  
+}

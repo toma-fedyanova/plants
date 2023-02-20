@@ -1,0 +1,151 @@
+.service__wrapper {
+  padding-bottom: 54px;
+  @include media-tablet {
+    padding-bottom: 34px;
+  }
+  @include media-mobile {
+    padding-bottom: 0;
+  }
+}
+.service__title {
+  display: flex;
+  align-items: center;
+  @include media-tablet {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+    h2 {
+    color: $color-brand;
+    width: 306px;
+    margin-right: 124px;
+    padding-top: 5px;
+    @include media-tablet {
+      padding-top: 28px;
+      padding-bottom: 16px;
+    }
+    @include media-mobile {
+      max-width: 187px;
+      padding-bottom: 16px;
+      padding-top: 10px;
+    }
+  }
+}
+.service__buttons {
+  width: 576px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .button_width {
+    padding-left: 53px;
+    padding-right: 60px;
+    @include media-tablet {
+      padding: 8px 51px;
+      max-width: 84%;
+    }
+    @include media-mobile{
+      padding: 8px 38px;
+    }
+  }
+  @include media-tablet {
+    max-width: 84%;
+  }
+  @include media-mobile {
+    flex-wrap: wrap;
+    max-width: 252px;
+  }
+}
+.service__buttons > button {
+  margin-left: 20px;
+  @include media-tablet {
+    margin-left: 0;
+  }
+  @include media-mobile {
+    margin-bottom: 5px;
+  }
+}
+.layout-3-column {
+  padding-top: 45px;
+  @include media-tablet {
+  padding-top: 37px;
+  }
+  @include media-mobile{
+    justify-content: center;
+  }
+  & > * {
+    transition-duration: 2s;
+  }
+}
+.layout-3-column:last-child {
+  padding-bottom: 55px;
+  margin-bottom: 10px;
+  @include media-tablet {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+.small__img {
+  display: none;
+  @include media-tablet {
+    display: inline;
+  }
+} 
+.img {
+  @include media-tablet {
+    display: none;
+  }
+}
+.service__section {
+  margin-bottom: 54px;
+  @include media-tablet {
+    margin-bottom: 0;
+  }
+}
+.block__bordered {
+  margin-top: - 5px;
+  border: 1px solid #E3E1D5;
+  border-radius: 0 0 20px 20px;
+  width: 330px;
+  @include media-tablet {
+    width: 280px;
+    margin-bottom: 37px;
+  }
+  @include media-mobile {
+    width: 279px;
+    margin-bottom: 35px;
+  }
+   >* {
+    text-align: center;
+   }
+   > h3 {
+    margin-top: 10px;
+    @include media-mobile {
+      margin-top: 8px;
+    }
+   }
+   > p {
+    @include font($style: normal, $weight: 400, $size: 16px, $height: 20px);
+    color: $color-text;
+    font-family: $font-inter;
+    margin-top: -5px;
+    margin-bottom: 36px;
+    @include media-tablet {
+      margin-top: -8px;
+      padding: 0 38px 0;
+      margin-bottom: 17px;
+    }
+    @include media-mobile{
+      margin-left: 0;
+      margin-bottom: 18px;
+    }
+  }
+}
+//add class by js
+.blur {
+  filter: blur(3px);
+  
+}
+.clicked {
+  background: $color-border;
+  color: $color-light;
+}
+
